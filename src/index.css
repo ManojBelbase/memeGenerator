@@ -5,9 +5,116 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E5DEFE;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App{
+  /* border: 2px solid red; */
+  margin: 40px 200px;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav{
+  padding: 10px 30px;
+  background-color: #8625A8;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.leftnav{
+  display: flex;
+  align-items: center;
+}
+.imgprop{
+  padding: 5px;
+  height: 40px;
+}
+.logoname{
+  font-weight: bold;
+  font-size: 25px;
+}
+/* Card SEction ds fm sdfs */
+.form{
+  display: grid;
+  padding: 40px;
+  grid-template: 50px 50px/1fr 1fr;
+  gap: 20px;
+}
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+.form-button{
+  grid-column: 1/-1;
+  background-color: #8625A8;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form-button:hover{
+  scale: 1.01;
+}
+
+.meme-images{
+max-width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 4px;
+}
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
